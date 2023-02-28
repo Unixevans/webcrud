@@ -1,0 +1,356 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgray;
+  overflow-x: hidden;
+}
+
+.fContainer {
+  display: block;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  padding: 15px;
+  height: 10vh;
+  background-color: rgb(83, 105, 128);
+}
+
+.brand {
+  display: flex;
+  flex-direction: row;
+  font-size: 25px;
+  padding: 15px;
+  text-transform: capitalize;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+.firstname {
+  color: rgb(221, 216, 216);
+  font-weight: 700;
+}
+
+.lastname {
+  color: rgb(68, 75, 80);
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 20px;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+li a {
+  color: rgb(221, 216, 216);
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 15px;
+}
+
+.shop {
+  color: #333;
+  background-color: rgb(194, 198, 199);
+  border-radius: 5px;
+}
+
+.buy {
+  border: 1px solid rgb(221, 216, 216);
+  border-radius: 5px;
+}
+.signup {
+  border: 1px solid rgb(221, 216, 216);
+  border-radius: 5px;
+}
+
+li a:hover {
+  color: #333;
+  padding: 15px;
+  border-radius: 2px;
+  background-color: rgb(194, 198, 199);
+  border-radius: 5px;
+}
+
+.content {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h3 {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-weight: 100;
+  color: lightslategray;
+}
+
+h3 a {
+  list-style-type: none;
+  color: #333;
+}
+
+.footer {
+  display: block;
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(102, 120, 138);
+  margin-bottom: 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  list-style-type: none;
+}
+
+li h3 {
+  color: rgb(221, 216, 216);
+  font-size: 15px;
+  font-weight: 400;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/*Hamburger Menu*/
+.menu-toggle {
+  display: none;
+  padding-right: 50px;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
+  order: 1;
+}
+
+.menu-toggle input {
+  display: block;
+  position: absolute;
+  width: 48px;
+  height: 28px;
+  left: -5px;
+  top: -5px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 28px;
+  height: 3px;
+  background: rgb(221, 216, 216);
+  border-radius: 3px;
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+/*Hamburger Menu*/
+.menu-toggle span:nth-child(2) {
+  transform-origin: 0 0;
+}
+.menu-toggle span:nth-child(4) {
+  transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2) {
+  transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3) {
+  transform: scale(0);
+}
+
+.gambarslide {
+  display: flex;
+}
+
+.gambarslide marquee img {
+  margin-top: 5px;
+}
+
+.rekomendasi {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: rgb(83, 105, 128);
+}
+.rekomendasi h3 {
+  font-weight: 500;
+  color: rgb(221, 216, 216);
+}
+
+.gambar {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.gambar img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto {
+  margin: 10px;
+  height: 260px;
+  background-color: rgb(83, 105, 128);
+  border: 2px solid rgb(83, 105, 128);
+  border-radius: 3px;
+}
+.foto h2 {
+  text-align: center;
+  color: lightgray;
+  font-weight: 500;
+  font-size: small;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.foto p {
+  margin-top: 10px;
+  padding: 5px;
+  color: lightgray;
+  text-align: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 3px;
+}
+
+.foto button {
+  width: 80%;
+  height: 25px;
+  justify-content: center;
+  border: none;
+  justify-content: center;
+  background-color: rgb(218, 218, 221);
+  border-radius: 10px;
+  transform: translateY(-80%);
+  transform: translateX(12%);
+  cursor: pointer;
+}
+
+.foto button a {
+  list-style: none;
+  text-decoration: none;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+  .gambar {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .fContainer {
+    display: block;
+  }
+  .wrapper .navigation {
+    display: none;
+  }
+
+  .gambar {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .wrapper .navigation {
+    position: absolute;
+    display: flex;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    background-color: lightslategray;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .wrapper .navigation.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .fContainer {
+    display: block;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .gambar {
+    display: flex;
+    justify-content: center;
+  }
+  .rekomendasi {
+    display: block;
+    padding: 5px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    background-color: lightslategray;
+  }
+
+  .wrapper .navigation {
+    position: absolute;
+    display: flex;
+    left: 0;
+    height: 100vh;
+    top: 0;
+    background-color: lightslategray;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: all 1s;
+  }
+
+  .wrapper .navigation.slide {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

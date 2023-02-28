@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="fContainer">
+      <nav class="wrapper">
+        <div class="menu-toggle">
+          <input type="checkbox" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="brand">
+          <div class="firstname">PRODUCTS</div>
+          <div class="lastname">STORE</div>
+        </div>
+        <ul class="navigation">
+          <li><a href="#" class="home">HOME</a></li>
+          <li><a href="belanja.html">BELANJA</a></li>
+          <li>
+            <a href="#" class="buy"><i class="fas fa-shopping-basket"></i></a>
+          </li>
+          <li><a href="#" class="signup">Sign Up</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <h3>Keranjang anda kosong silahkan kembali <a href="belanja.html">BELANJA</a></h3>
+      </div>
+      <footer class="footer">
+        <ul class="footer-container">
+          <li><h3>Terima Kasih</h3></li>
+          <li><h3>Evanoz | Copyright All Right Reseved 2023</h3></li>
+        </ul>
+      </footer>
+
+      <script>
+        const menuToggle = document.querySelector(".menu-toggle input");
+        const nav = document.querySelector(".wrapper .navigation");
+
+        menuToggle.addEventListener("click", function () {
+          nav.classList.toggle("slide");
+        });
+      </script>
+    </div>
+  </body>
+</html>

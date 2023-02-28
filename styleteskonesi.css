@@ -1,0 +1,79 @@
+#kanan {
+  float: right;
+  margin: 5px;
+  margin-right: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+#kanan:hover {
+  color: white;
+  background-color: rgb(0,0,0,0.5);
+  cursor: pointer;
+}
+#kiri {
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#kiri:hover {
+  color: white;
+  background-color: rgb(0,0,0,0.5);
+  cursor: pointer;
+}
+.text {
+  color: white;
+  font-family: Courier New;
+  background-color: rgb(0,0,0,0.5);
+  width: auto;
+  margin: 10px;
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 30px;
+  border: none;
+}
+
+#cari {
+  background: transparent;
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 40%;
+  padding: 5px;
+  margin: 10px;
+  margin-right: 0;
+  outline: none;
+  color: white;
+}
+#cari:hover {
+  color: white;
+  background-color: rgb(0,0,0,0.4);
+  cursor: pointer;
+}
+
+#cariv2 {
+  margin: 0;
+  padding: 5px;
+  background: rgb(0,0,0,0.2);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+#cariv2:hover {
+  background-color: rgb(0,0,0,0.5);
+  cursor: pointer;
+}
+
+
+.pagin {
+  font-family: Arial;
+  height: auto;
+  width: 100px;
+  background-color: rgb(0,0,0,0.3);
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
+  margin: 10px;
+  margin-top: 20px;
+  text-align: center;
+}

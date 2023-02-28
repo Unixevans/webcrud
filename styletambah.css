@@ -1,0 +1,72 @@
+*,
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: lightgray;
+  overflow-x: hidden;
+}
+
+.fContainer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+}
+
+.wr {
+  display: flex;
+  transform: translateX(90%);
+}
+
+.back {
+  background-color: lightslategray;
+  border: none;
+  width: 60px;
+  height: 30px;
+  border-radius: 3px;
+  margin-top: 10px;
+}
+
+a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+.form {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 70%;
+  margin-top: 20px;
+  padding: 30px;
+  border: 3px solid lightslategray;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .card {
+    width: 70%;
+  }
+}
